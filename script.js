@@ -68,3 +68,15 @@ function typeMessage() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+function showScreen(id) {
+  document.getElementById("screen-locked").style.display = "none";
+  document.getElementById("screen-unlock").style.display = "none";
+  document.getElementById("screen-story").style.display = "none";
+
+  document.getElementById(id).style.display = "block";
+}
+
+function startStory() {
+  showScreen("screen-story");
+}
