@@ -1,5 +1,5 @@
 // 🔥 NEW YEAR TIME — EXACTLY 12:00 AM
-const unlockTime = new Date("Jan 1, 2026 00:00:00").getTime();
+const unlockTime = Date.now() + 60000;
 
 // ✍️ PERSONAL MESSAGE (you can change this later)
 const personalMessage = [
