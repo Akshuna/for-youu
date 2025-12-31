@@ -80,3 +80,17 @@ function showScreen(id) {
 function startStory() {
   showScreen("screen-story");
 }
+let currentPage = 1;
+
+function nextPage() {
+  currentPage++;
+  document.getElementById("pageText").innerText = "Page " + currentPage;
+}
+
+function prevPage() {
+  if (currentPage > 1) {
+    currentPage--;
+    document.getElementById("pageText").innerText = "Page " + currentPage;
+  }
+}
+
