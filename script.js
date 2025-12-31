@@ -80,17 +80,48 @@ function showScreen(id) {
 function startStory() {
   showScreen("screen-story");
 }
-let currentPage = 1;
+const pages = [
+  {
+    image: "https://placekitten.com/400/500",
+    text: "Page one test"
+  },
+  {
+    image: "https://placekitten.com/401/500",
+    text: "Page two test"
+  },
+  {
+    image: "https://placekitten.com/402/500",
+    text: "Page three test"
+  },
+  {
+    image: "https://placekitten.com/403/500",
+    text: "Page four test"
+  }
+];
+
+let currentPage = 0;
+
+function startStory() {
+  currentPage = 0;
+  showPage();
+}
+
+function showPage() {
+  document.getElementById("storyImage").src = pages[currentPage].image;
+  document.getElementById("storyText").innerText = pages[currentPage].text;
+}
 
 function nextPage() {
-  currentPage++;
-  document.getElementById("pageText").innerText = "Page " + currentPage;
+  if (currentPage < pages.length - 1) {
+    currentPage++;
+    showPage();
+  }
 }
 
 function prevPage() {
-  if (currentPage > 1) {
+  if (currentPage > 0) {
     currentPage--;
-    document.getElementById("pageText").innerText = "Page " + currentPage;
+    showPage();
   }
 }
 
