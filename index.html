@@ -41,10 +41,16 @@
   <button onclick="startStory()">Start ▶</button>
 </div>
 
-  <!-- STORY SCREEN (TEST ONLY) -->
+<!-- STORY SCREEN (BUTTON TEST) -->
 <div id="screen-story" style="display:none; text-align:center;">
-  <h2>Story screen reached ✅</h2>
+  <h2 id="pageText">Page 1</h2>
+
+  <div style="margin-top:20px;">
+    <button onclick="prevPage()">◀ Back</button>
+    <button onclick="nextPage()">Next ▶</button>
+  </div>
 </div>
+
 
   <!-- MESSAGE SCREEN -->
   <div id="screen-message" class="screen">
