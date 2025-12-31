@@ -26,7 +26,7 @@ function updateCountdown() {
     setTimeout(() => {
       showScreen("screen-message");
       typeMessage();
-    }, 1200);
+    }, 1600);
 
     return;
   }
