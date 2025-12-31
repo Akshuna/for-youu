@@ -83,21 +83,22 @@ function startStory() {
 const pages = [
   {
     image: "https://placekitten.com/400/500",
-    text: "Page one test"
+    text: "She moves like quiet certainty, not loud enough to ask for attention, strong enough to keep it."
   },
   {
     image: "https://placekitten.com/401/500",
-    text: "Page two test"
+    text: "Her smile doesn’t promise anything — it simply stays, long after she’s gone."
   },
   {
     image: "https://placekitten.com/402/500",
-    text: "Page three test"
+    text: "I love her the way thoughts repeat at night — uninvited, relentless, honest."
   },
   {
     image: "https://placekitten.com/403/500",
-    text: "Page four test"
+    text: "If this year gave me one true thing, it was her name settling somewhere it refuses to leave. ~parthivi"
   }
 ];
+
 
 let currentPage = 0;
 
